@@ -86,7 +86,7 @@ if ( ! class_exists( 'Astra_Adv_Footer_Colors_Configs' ) ) {
 					'tab'     => __( 'Normal', 'astra' ),
 					'control' => 'ast-color',
 					'title'   => __( 'Title Color', 'astra' ),
-					'default' => '',
+					'default' => astra_get_option( 'footer-adv-wgt-title-color' ),
 				),
 
 				/**
@@ -100,7 +100,7 @@ if ( ! class_exists( 'Astra_Adv_Footer_Colors_Configs' ) ) {
 					'tab'     => __( 'Normal', 'astra' ),
 					'control' => 'ast-color',
 					'title'   => __( 'Text Color', 'astra' ),
-					'default' => '',
+					'default' => astra_get_option( 'footer-adv-text-color' ),
 				),
 
 				/**
@@ -114,7 +114,7 @@ if ( ! class_exists( 'Astra_Adv_Footer_Colors_Configs' ) ) {
 					'tab'     => __( 'Normal', 'astra' ),
 					'control' => 'ast-color',
 					'title'   => __( 'Link Color', 'astra' ),
-					'default' => '',
+					'default' => astra_get_option( 'footer-adv-link-color' ),
 				),
 
 				/**
@@ -128,7 +128,7 @@ if ( ! class_exists( 'Astra_Adv_Footer_Colors_Configs' ) ) {
 					'tab'     => __( 'Hover', 'astra' ),
 					'control' => 'ast-color',
 					'title'   => __( 'Link Color', 'astra' ),
-					'default' => '',
+					'default' => astra_get_option( 'footer-adv-link-h-color' ),
 				),
 
 				/**
