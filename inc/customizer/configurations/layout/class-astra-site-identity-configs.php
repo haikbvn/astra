@@ -93,7 +93,7 @@ if ( ! class_exists( 'Astra_Site_Identity_Configs' ) ) {
 					'control'  => 'checkbox',
 					'section'  => 'title_tagline',
 					'title'    => __( 'Different Logo For Retina Devices?', 'astra' ),
-					'default'  => false,
+					'default'  => astra_get_option( 'different-retina-logo' ),
 					'priority' => 5,
 				),
 				/**
@@ -118,7 +118,7 @@ if ( ! class_exists( 'Astra_Site_Identity_Configs' ) ) {
 					'name'     => ASTRA_THEME_SETTINGS . '[different-mobile-logo]',
 					'type'     => 'control',
 					'control'  => 'checkbox',
-					'default'  => false,
+					'default'  => astra_get_option( 'different-mobile-logo' ),
 					'section'  => 'title_tagline',
 					'title'    => __( 'Different Logo For Mobile Devices?', 'astra' ),
 					'priority' => 5,
@@ -148,11 +148,7 @@ if ( ! class_exists( 'Astra_Site_Identity_Configs' ) ) {
 					'control'     => 'ast-responsive-slider',
 					'section'     => 'title_tagline',
 					'transport'   => 'postMessage',
-					'default'     => array(
-						'desktop' => '',
-						'tablet'  => '',
-						'mobile'  => '',
-					),
+					'default'     => astra_get_option( 'ast-header-responsive-logo-width' ),
 					'priority'    => 5,
 					'title'       => __( 'Logo Width', 'astra' ),
 					'input_attrs' => array(

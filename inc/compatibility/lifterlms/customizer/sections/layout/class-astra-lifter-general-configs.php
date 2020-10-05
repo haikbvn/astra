@@ -40,11 +40,7 @@ if ( ! class_exists( 'Astra_Lifter_General_Configs' ) ) {
 					'type'        => 'control',
 					'control'     => 'ast-responsive-slider',
 					'section'     => 'section-lifterlms',
-					'default'     => array(
-						'desktop' => 3,
-						'tablet'  => 2,
-						'mobile'  => 1,
-					),
+					'default'     => astra_get_option( 'llms-course-grid' ),
 					'title'       => __( 'Course Columns', 'astra' ),
 					'priority'    => 0,
 					'input_attrs' => array(
@@ -62,11 +58,7 @@ if ( ! class_exists( 'Astra_Lifter_General_Configs' ) ) {
 					'type'        => 'control',
 					'control'     => 'ast-responsive-slider',
 					'section'     => 'section-lifterlms',
-					'default'     => array(
-						'desktop' => 3,
-						'tablet'  => 2,
-						'mobile'  => 1,
-					),
+					'default'     => astra_get_option( 'llms-membership-grid' ),
 					'title'       => __( 'Membership Columns', 'astra' ),
 					'priority'    => 0,
 					'input_attrs' => array(

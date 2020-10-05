@@ -40,11 +40,7 @@ if ( ! class_exists( 'Astra_Edd_Archive_Layout_Configs' ) ) {
 					'type'        => 'control',
 					'control'     => 'ast-responsive-slider',
 					'section'     => 'section-edd-archive',
-					'default'     => array(
-						'desktop' => 4,
-						'tablet'  => 3,
-						'mobile'  => 2,
-					),
+					'default'     => astra_get_option( 'edd-archive-grids' ),
 					'priority'    => 10,
 					'title'       => __( 'Archive Columns', 'astra' ),
 					'input_attrs' => array(
@@ -158,7 +154,7 @@ if ( ! class_exists( 'Astra_Edd_Archive_Layout_Configs' ) ) {
 					'type'        => 'control',
 					'control'     => 'ast-slider',
 					'section'     => 'section-edd-archive',
-					'default'     => 1200,
+					'default'     => astra_get_option( 'edd-archive-max-width' ),
 					'priority'    => 225,
 					'required'    => array( ASTRA_THEME_SETTINGS . '[edd-archive-width]', '===', 'custom' ),
 					'title'       => __( 'Custom Width', 'astra' ),

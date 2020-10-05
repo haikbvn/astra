@@ -107,7 +107,7 @@ if ( ! class_exists( 'Astra_Header_Layout_Configs' ) ) {
 				array(
 					'name'      => ASTRA_THEME_SETTINGS . '[header-main-sep-color]',
 					'transport' => 'postMessage',
-					'default'   => '',
+					'default'   => astra_get_option( 'header-main-sep-color' ),
 					'type'      => 'control',
 					'required'  => array( ASTRA_THEME_SETTINGS . '[header-main-sep]', '>=', 1 ),
 					'control'   => 'ast-color',
@@ -315,7 +315,7 @@ if ( ! class_exists( 'Astra_Header_Layout_Configs' ) ) {
 					'control'   => 'ast-color',
 					'transport' => 'postMessage',
 					'name'      => ASTRA_THEME_SETTINGS . '[primary-submenu-b-color]',
-					'default'   => '',
+					'default'   => astra_get_option( 'primary-submenu-b-color' ),
 					'title'     => __( 'Border Color', 'astra' ),
 					'section'   => 'section-primary-menu',
 					'priority'  => 30,
@@ -338,7 +338,7 @@ if ( ! class_exists( 'Astra_Header_Layout_Configs' ) ) {
 					'control'   => 'ast-color',
 					'transport' => 'postMessage',
 					'name'      => ASTRA_THEME_SETTINGS . '[primary-submenu-item-b-color]',
-					'default'   => '',
+					'default'   => astra_get_option( 'primary-submenu-item-b-color' ),
 					'title'     => __( 'Divider Color', 'astra' ),
 					'section'   => 'section-primary-menu',
 					'required'  => array(
@@ -428,7 +428,7 @@ if ( ! class_exists( 'Astra_Header_Layout_Configs' ) ) {
 				 */
 				array(
 					'name'              => ASTRA_THEME_SETTINGS . '[mobile-header-breakpoint]',
-					'default'           => '',
+					'default'           => astra_get_option( 'mobile-header-breakpoint' ),
 					'type'              => 'control',
 					'control'           => 'ast-slider',
 					'section'           => 'section-primary-menu',
