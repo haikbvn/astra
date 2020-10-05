@@ -62,7 +62,7 @@ if ( ! class_exists( 'Astra_Blog_Single_Layout_Configs' ) ) {
 					'control'     => 'ast-slider',
 					'section'     => 'section-blog-single',
 					'transport'   => 'postMessage',
-					'default'     => 1200,
+					'default'     => astra_get_option( 'blog-single-max-width' ),
 					'required'    => array( ASTRA_THEME_SETTINGS . '[blog-single-width]', '===', 'custom' ),
 					'priority'    => 5,
 					'title'       => __( 'Custom Width', 'astra' ),
