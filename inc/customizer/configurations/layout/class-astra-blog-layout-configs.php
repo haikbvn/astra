@@ -70,7 +70,7 @@ if ( ! class_exists( 'Astra_Blog_Layout_Configs' ) ) {
 					'control'     => 'ast-slider',
 					'section'     => 'section-blog',
 					'transport'   => 'postMessage',
-					'default'     => 1200,
+					'default'     => astra_get_option( 'blog-max-width' ),
 					'priority'    => 50,
 					'required'    => array( ASTRA_THEME_SETTINGS . '[blog-width]', '===', 'custom' ),
 					'title'       => __( 'Custom Width', 'astra' ),
