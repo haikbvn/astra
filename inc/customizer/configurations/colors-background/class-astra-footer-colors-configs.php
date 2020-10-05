@@ -43,7 +43,7 @@ if ( ! class_exists( 'Astra_Footer_Colors_Configs' ) ) {
 					'section'  => 'section-footer-small',
 					'control'  => 'ast-color',
 					'title'    => __( 'Text Color', 'astra' ),
-					'default'  => '',
+					'default'  => astra_get_option( 'footer-color' ),
 				),
 
 				/**
@@ -57,7 +57,7 @@ if ( ! class_exists( 'Astra_Footer_Colors_Configs' ) ) {
 					'parent'   => ASTRA_THEME_SETTINGS . '[footer-bar-content-group]',
 					'section'  => 'section-footer-small',
 					'control'  => 'ast-color',
-					'default'  => '',
+					'default'  => astra_get_option( 'footer-link-color' ),
 					'title'    => __( 'Link Color', 'astra' ),
 				),
 
@@ -73,7 +73,7 @@ if ( ! class_exists( 'Astra_Footer_Colors_Configs' ) ) {
 					'section'  => 'section-footer-small',
 					'control'  => 'ast-color',
 					'title'    => __( 'Link Color', 'astra' ),
-					'default'  => '',
+					'default'  => astra_get_option( 'footer-link-h-color' ),
 				),
 
 				/**
